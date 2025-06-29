@@ -13,7 +13,7 @@ This is a fully responsive website built using **HTML**, **core CSS**, and **van
 
 ## 📸 Preview
 
-![Website Preview]((https://redoyhossen.w3spaces.com/)) <!-- Replace with your screenshot filename -->
+Website Preview( https://redoyhossen.w3spaces.com/ ) <!-- Replace with your screenshot filename -->
 
 ## 🛠️ Technologies Used
 
