@@ -1,0 +1,1594 @@
+/* Import Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800&display=swap);
+
+/* Root variables */
+:root {
+  --main-color: #ff5200
+}
+
+/* Base styles for body and paragraphs */
+body,
+p {
+  font-family: 'Work Sans', sans-serif;
+  color: #ababab;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Home content main heading */
+.homecontent h1 {
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  width: 409px;
+  font-size: 50px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: .2px;
+  padding-top: 135px
+}
+
+/* Reset default margin, padding, and list styles */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none
+}
+
+/* Body background */
+body {
+  background: #fff
+}
+
+/* Section padding and stacking context */
+section {
+  padding: 82px 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Top bar styles */
+.mosttop {
+  overflow: hidden;
+  font-family: osowld;
+  padding: 5px 0
+}
+
+/* Container for layout */
+.container {
+  width: 940px;
+  margin: auto;
+  overflow: hidden
+}
+
+/* Primary menu bar */
+.primarymanu {
+  margin: 14px 0;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+/* Fixed menu on scroll */
+.menuFixed {
+  position: fixed;
+  top: -14;
+  background-color: #fff;
+  z-index: 1;
+  border-bottom: 1px solid #f3d0d0;
+}
+
+/* Top bar main container */
+div#topbermain {
+  overflow: hidden;
+  padding: 0 40px;
+  background: #f5f5f5
+}
+
+/* Phone/email menu item */
+#phem {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  border-left: 1px solid #e4e4e4;
+  list-style-type: none;
+  float: left;
+  margin: 0;
+  padding: 13.5px 14px 12.5px 14px
+}
+
+/* Main menu team list */
+.manuteam {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 40px
+}
+
+/* Social icons container */
+.social {
+  padding: 6px 0;
+  float: right;
+  margin: 0
+}
+
+/* Social icon links */
+.social a {
+  color: #292a2d;
+  font-size: 15px;
+  list-style-type: none;
+  float: left;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-left: 1px solid #e4e4e4;
+  margin: 0;
+  padding: 8px 0 8px 0;
+  transition: .1s
+}
+
+/* Social icon hover effect */
+.social a:hover {
+  color: #ff5200;
+  font-size: 18px;
+  padding: 7px 0 7px 0
+}
+
+/* Logo image */
+.logo {
+  width: 130px;
+  float: left
+}
+
+/* Hide bars by default (for mobile menu) */
+#bars {
+  opacity: 0
+}
+
+/* Main menu team list (ul) */
+ul.manuteam {
+  list-style: none;
+  float: right;
+  z-index: 999;
+}
+
+/* Flex menu container */
+.manu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Menu team list items */
+.manuteam li {
+  font-family: osowld;
+  text-decoration: none;
+  font-family: system-ui;
+  float: left;
+  font-weight: 700;
+  padding: 0 11px
+}
+
+/* Menu team link transition */
+.manuteam li a {
+  transition: .5s
+}
+
+/* Menu team link hover color */
+.manuteam li:hover a {
+  color: #ff5200
+}
+
+/* Learn more link color */
+.larnmore {
+  color: #ff5200
+}
+
+/* Menu team link styles */
+.manuteam li a {
+  text-decoration: none;
+  color: #1c1b1b;
+  text-transform: uppercase
+}
+
+/* Dropdown chevron icon */
+i.fas.fa-chevron-down {
+  font-size: 11px;
+  margin-top: -27px;
+  width: 15px;
+  padding-left: 4px
+}
+
+/* Search button icon */
+#searchbtn i.fas.fa-search {
+  color: #000;
+  font-size: 19px;
+  transition: .4s
+}
+
+/* Search button hover */
+#searchbtn i.fas.fa-search:hover {
+  color: #ff5200;
+  cursor: pointer
+}
+
+/* Submenu dropdown */
+ul.subManu {
+  width: 200px;
+  position: absolute;
+  padding-top: 10px;
+  margin-left: -25px;
+  transform: scaleY(0);
+  transform-origin: top;
+  visibility: hidden;
+  transition: .3s;
+  background: #fff
+}
+
+/* Show submenu on hover */
+.manuteam #manuPage:hover .subManu {
+  transform: scaleY(1);
+  visibility: visible;
+}
+
+/* Force submenu open (JS toggle) */
+.subManu2 {
+  transform: scaleY(1) !important;
+  visibility: visible !important;
+}
+
+/* Submenu list items */
+.subManu li {
+  float: none;
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #181515;
+  transition: .3s
+}
+
+/* Submenu hover effect */
+.subManu li:hover {
+  color: tomato;
+  padding-left: 45px;
+  cursor: pointer;
+}
+
+/* Hide menu close by default */
+.menuClose{display: none;}
+
+/* Close button style */
+span.close {
+  width: 55px;
+  border: 3px solid tomato;
+  display: block;
+  border-radius: 25px;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+/* First close line rotation */
+.menuClose .first{ 
+    transform: rotate(-45deg);
+}
+
+/* Search input style */
+.srcInput {
+  padding: 10px 16px;
+  outline: none;
+  border-radius: 7px;
+  width: 95%;
+  border: none;
+}
+
+/* Search button container */
+ div#searchbtn {
+    display: flex;
+    align-items: center;
+  }
+
+/* Search input container */
+.srcDiv {
+  width: 58%;
+  float: right;
+  background: #d1d1d1b8;
+  border-radius: 4px;
+  /* transform: translateY(-110%); */
+  transition: .3s;
+  display: flex;
+  padding: 8px;
+  gap: 10px;
+}
+
+/* Search icon in input */
+.srcDiv i {
+  font-size: 22px;
+  transform: translateY(6px);
+  cursor: pointer;
+}
+
+/* Expanded search input */
+.srcDiv2 {
+  height: 105px;
+}
+
+/* Home slider background and transition */
+.homeslider {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 1s;
+}
+
+/* Slider backgrounds */
+.back1 {
+  background: url(image/slide-1.jpg);
+}
+.back2 {
+  background: url(image/slide-2.jpg);
+}
+
+/* Home content paragraph */
+.homecontent p {
+  width: 410px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  font-family: system-ui;
+  margin: 20px 0
+}
+
+/* Slider button */
+#sliderworkbtn {
+  padding: 15px 40px;
+  color: #fff;
+  background: #ff5200;
+  border: 1px solid #ff5200;
+  border-radius: 3px;
+  transition: .5s;
+  font-family: arial #000
+}
+
+/* Slider button hover */
+#sliderworkbtn:hover {
+  background: #252525;
+  border: 1px solid #252525
+}
+
+/* Slider button container */
+.sliderbtn {
+  padding: 30px 4px;
+  margin-bottom: 50px
+}
+
+/* Slider navigation dots */
+.slidernav {
+  width: 60px;
+  margin: 0 auto;
+  padding-bottom: 30px
+}
+.slidernav span {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #ddd;
+  display: block;
+  border-radius: 100%;
+  float: left;
+  margin-right: 5px
+}
+span.Nav2 {
+  background: #ff5200;
+  border-color: #ff5200;
+}
+
+/* Service icon */
+i.fab.fa-accusoft {
+  font-size: 50px;
+  color: #ff5200;
+  margin-top: 15px
+}
+
+/* Services section background */
+section#services {
+  background: #f5f5f5
+}
+
+/* Service box title */
+.sboxtitle {
+  font-size: 13px;
+  padding: 21px 0;
+  color: #221f1f
+}
+
+/* Single service box */
+.siglebox {
+  width: 194px;
+  float: left;
+  margin-right: 33px;
+  border: 1px solid #ddd;
+  text-align: center;
+  transition: 1s;
+}
+
+/* Service box scale animation */
+.scale1 {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+/* Service box hover effect */
+.siglebox:hover {
+  background: #ff5200
+}
+.siglebox:hover h2,
+.siglebox:hover i,
+.siglebox:hover div,
+.siglebox:hover a {
+  color: #fff
+}
+
+/* Highlighted service box */
+#singlebox2 {
+  background: #ff5200
+}
+#singlebox2 h2,
+#singlebox2 i,
+#singlebox2 a,
+#singlebox2 div {
+  color: #fff
+}
+
+/* Service box title heading */
+.sboxtitle h2 {
+  color: #514c49;
+  font-size: 20px;
+  font-family: arial;
+  margin: 20px 0
+}
+
+/* Service box description */
+.sboxdesc {
+  color: #747474;
+  font-size: 17px;
+  font-family: sans-serif;
+  width: 154px;
+  margin: 0 auto;
+  padding-bottom: 15px
+}
+
+/* Learn more link */
+.larnmore {
+  font-size: 14px;
+  padding: 15px 0;
+  font-family: monospace;
+  font-weight: 700
+}
+
+/* Arrow icon for learn more */
+i.fas.fa-arrow-right {
+  padding-left: 5px;
+  font-size: 12px
+}
+
+/* Service box link container */
+.sboxlink {
+  margin-bottom: 25px;
+  margin-top: 12px
+}
+
+/* Team image */
+.teamimg {
+  width: 445px;
+  float: left;
+  overflow: hidden;
+  margin-right: 15px
+}
+
+/* All images */
+img {
+  width: 100%;
+  position: relative;
+  overflow: hidden
+}
+
+/* Main content heading */
+.mainconten h2 {
+  font-size: 35px;
+  float: left;
+  font-size: 36px;
+  padding-top: 0;
+  line-height: 1.2em;
+  margin-bottom: 0;
+  width: 100%;
+  font-family: Oswald, sans-serif;
+  color: #262626
+}
+
+/* Team content container */
+.teamcontent {
+  width: 445px;
+  float: left;
+  margin-left: 35px
+}
+
+/* Main content heading override */
+.mainconten h2 {
+  font-size: 40px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  padding-top: 0
+}
+
+/* Team menu container */
+.teammanu {
+  width: 100%;
+  overflow: hidden
+}
+
+/* Team menu lists */
+.teammanu ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  list-style: none
+}
+
+/* Left team menu items */
+.leftmanu li {
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: .3s
+}
+
+/* Right team menu items */
+.rightmanu li {
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: .3s
+}
+
+/* Team menu hover effect */
+.teammanu li:hover {
+  color: #ff5200;
+  cursor: pointer
+}
+
+/* Left team menu list */
+ul.leftmanu {
+  float: left;
+  width: 215px
+}
+
+/* Right team menu list */
+ul.rightmanu {
+  width: 180px;
+  float: left
+}
+
+/* Team menu icons */
+.teammanu li i {
+  font-size: 13px;
+  padding-right: 9px
+}
+
+/* Team button */
+.teambtn a {
+  padding: 12px 28px;
+  background: #ff5200;
+  color: #fff;
+  font-family: arial;
+  border-radius: 3px;
+  font-weight: 700;
+  transition: .3s
+}
+
+/* Team button container */
+.teambtn {
+  height: 40px;
+  width: 150px
+}
+
+/* Team button hover */
+.teambtn a:hover {
+  background-color: #252525;
+  border-color: #252525;
+  color: #fff
+}
+
+/* Why choose us section background */
+.whychoseus {
+  background: linear-gradient(#09060659, #211f1f), url(image/background_files/why-choose-us1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+
+/* Single icon box */
+.singleicon {
+  width: 225px;
+  float: left;
+  padding-right: 5px;
+  text-align: center
+}
+
+/* Service icons */
+.sicons {
+  font-size: 60px;
+  color: #fff;
+  padding-bottom: 15px
+}
+
+/* Single icon heading */
+.singleicon h2 {
+  font-size: 50px;
+  color: #fff
+}
+
+/* Single icon subheading */
+.singleicon h3 {
+  font-weight: 500;
+  font-family: Oswald, sans-serif;
+  color: #fff
+}
+
+/* From us section background */
+.FROMUS {
+  background: #f5f5f5
+}
+
+/* Section header content */
+.headcontent {
+  text-align: center;
+  width: 620px;
+  margin: 0 auto;
+}
+
+/* Section header heading */
+.headcontent h1 {
+  font-family: Oswald, sans-serif;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .02em;
+  position: relative;
+  font-size: 40px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: #000;
+  padding-top: 0
+}
+
+/* Section header paragraph */
+.headcontent p {
+  font-size: 16px;
+  margin-top: 10px
+}
+
+/* Image content box */
+.imagecontent {
+  width: 212px;
+  float: left;
+  margin-right: 30px
+}
+
+/* Image content heading */
+.imagecontent h2 {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .02em;
+  font-size: 20px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  font-family: Oswald, sans-serif
+}
+
+/* Post border style */
+span.postborder {
+  border: 1.5px solid #f65200;
+  display: block;
+  width: 57px;
+  background: #f65200;
+  margin: 0 auto
+}
+
+/* Remove margin for last image content */
+.imagecontent:last-child {
+  margin-right: 0
+}
+
+/* Pricing section background */
+#pricecontainer {
+  background: #f6f6f6
+}
+
+/* Pricing service icon */
+.priceingsrv li i {
+  color: #ff5200
+}
+
+/* Pricing content headings */
+.pricecontent h1 h3 {
+  font-family: Oswald, sans-serif;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .02em
+}
+
+/* Pricing plan box */
+.start {
+  width: 220px;
+  border: 1px solid #eee;
+  background: #fff;
+  float: left;
+  margin-right: 45px;
+  padding: 30px
+}
+
+/* Remove margin for last pricing plan */
+.start:last-child {
+  margin-right: 0
+}
+
+/* Pricing plan heading */
+.start h3 {
+  font-family: Oswald, sans-serif;
+  color: #000;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.-98em;
+  font-size: 25px
+}
+
+/* Pricing content container */
+.pricecontent {
+  width: 100%;
+  padding-top: 70px
+}
+
+/* Pricing plan price */
+.start h1 {
+  font-size: 50px;
+  color: #000;
+  padding: 5px 0
+}
+
+/* Pricing plan currency */
+.start span {
+  font-size: 20px;
+  margin-left: -10px
+}
+
+/* Pricing service list */
+.priceingsrv li {
+  margin-bottom: 12px;
+  color: #57647c;
+  position: relative;
+  padding-left: 19px;
+  list-style: none
+}
+
+/* Pricing service icon */
+.priceingsrv i {
+  color: #ff4800;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+
+/* Pricing button */
+.pricebtn {
+  padding: 15px 30px;
+  color: #fff;
+  background: #ff5200;
+  border: none;
+  border-radius: 4px;
+  margin: 25px 0;
+  transition: .4s;
+  font-family: system-ui;
+  letter-spacing: -.6px;
+  font-weight: bolder;
+  font-size: 16px
+}
+
+/* Pricing button hover */
+.pricebtn:hover {
+  cursor: pointer;
+  background-color: #252525;
+  border-color: #252525;
+  color: #fff
+}
+
+/* Ideas section no padding */
+section.Ideas {
+  padding: 0
+}
+
+/* Idea image container */
+.ideaimg {
+  overflow: hidden;
+  width: 50%;
+  float: left
+}
+
+/* Left image in ideas section */
+.idealeftimg {
+  width: 100%;
+  height: 595px;
+  background-image: url(image/background_files/s02.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover
+}
+
+/* Inner box padding */
+.innerbox {
+  position: relative;
+  padding: 40px 60px 45px 38px
+}
+
+/* Right content in ideas section */
+.idearightcontent {
+  width: 50%;
+  height: 595px;
+  float: right;
+  overflow: hidden;
+  background: #222
+}
+
+/* Idea header heading */
+.ideaheader h1 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 30px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .02em;
+  font-family: Oswald, sans-serif
+}
+
+/* Idea header paragraph */
+.ideaheader p {
+  width: 450px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  position: relative;
+  line-height: 27px;
+  color: #fff;
+  margin-bottom: 27px;
+  margin-top: 0
+}
+
+/* Idea single item hover */
+.ideasingle h5:hover {
+  color: #ff5200;
+  cursor: pointer
+}
+
+/* Single idea item */
+.ideasingle {
+  position: relative;
+  margin-bottom: 30px
+}
+
+/* Single idea heading */
+.ideasingle h5 {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .02em;
+  font-family: Oswald, sans-serif;
+  transition: .3s
+}
+
+/* Single idea paragraph */
+.ideasingle p {
+  font-family: 'Work Sans', sans-serif;
+  color: #ddd;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0;
+  margin-bottom: 1rem
+}
+
+/* Single idea icon */
+.ideasingle i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--main-color);
+  line-height: 1em;
+  font-size: 48px;
+  font-weight: 400
+}
+
+/* Meet the team header */
+.meetheader {
+  margin-bottom: 50px
+}
+.meetheader h1 {
+  font-size: 40px;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  color: #000;
+  margin-bottom: .5rem;
+  margin: 0 auto;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: .02em;
+  font-family: Oswald, sans-serif;
+  text-align: center
+}
+.meetheader p {
+  margin-bottom: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  color: #656565;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center
+}
+
+/* Team member card */
+.teammember {
+  width: 215px;
+  float: left;
+  padding-left: 25px;
+  text-align: center
+}
+.teammember:first-child {
+  padding-left: 0
+}
+
+/* Team member text box */
+.texts {
+  text-align: center;
+  padding-bottom: 20px;
+  border: 1px solid #e2d3d3;
+  border-top: none;
+  margin-top: -60px;
+  padding-top: 25px;
+}
+
+/* Team member name */
+.teammember h2 {
+  font-family: Oswald, sans-serif;
+  color: #000;
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin: 0;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .02em
+}
+
+/* Team member description */
+.teammember p {
+  font-family: 'Work Sans', sans-serif;
+  color: #656565;
+  font-size: 13px !important;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased
+}
+
+/* Team join button */
+.teamjoinbtn {
+  text-align: center;
+  width: 170px;
+  padding: 13px 5px;
+  background-color: #252525;
+  border-color: #252525;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 auto;
+  transition: .5s;
+  margin-top: 50px;
+  font-family: Oswald, sans-serif;
+  transition: all ease .238s;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .08em
+}
+.teamjoinbtn a {
+  color: #fff
+}
+.teamjoinbtn:hover {
+  background: #ff5200
+}
+
+/* Team member social icons */
+.teanicons {
+  width: 130px;
+  height: 52px;
+  position: relative;
+  bottom: 80px;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto
+}
+.teanicons a {
+  width: 20px;
+  height: 20px;
+  font-size: 13px;
+  float: left;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  padding: 4px;
+  color: #fff;
+  margin: 0 2px
+}
+
+/* Social icon backgrounds and transitions */
+.teanicons a:first-child {
+  background: #3b5998;
+  opacity: 0;
+  transition: .9s
+}
+.teanicons a:nth-child(2) {
+  background: #00acee;
+  opacity: 0;
+  transition: .7s
+}
+.teanicons a:nth-child(3) {
+  background: #db4a39;
+  opacity: 0;
+  transition: .5s
+}
+.teanicons a:last-child {
+  background: #0e76a8;
+  opacity: 0;
+  transition: .3s
+}
+.teanicons a:hover {
+  background: #fff;
+  color: #252525
+}
+
+/* Show social icons on team member hover */
+.teammember:hover .teanicons a:first-child {
+  transform: translateY(20px);
+  opacity: 1
+}
+.teammember:hover .teanicons a:nth-child(2) {
+  transform: translateY(20px);
+  opacity: 1
+}
+.teammember:hover .teanicons a:nth-child(3) {
+  transform: translateY(20px);
+  opacity: 1
+}
+.teammember:hover .teanicons a:last-child {
+  transform: translateY(20px);
+  opacity: 1
+}
+
+/* Our projects section background */
+.ourprojacts {
+  background: #f6f6f6
+}
+
+/* Project section header */
+.projactheader {
+  margin-bottom: 50px
+}
+.projactheader h1 {
+  font-size: 40px;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  color: #000;
+  margin-bottom: .5rem;
+  margin: 0 auto;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: .02em;
+  font-family: Oswald, sans-serif;
+  text-align: center
+}
+.projactheader p {
+  margin-bottom: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  color: #656565;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center
+}
+
+/* Projects grid */
+.projactsall {
+  width: 100%;
+  column-count: 3
+}
+
+/* Single project card */
+.singleproject {
+  width: 280px;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.singleproject:last-child {
+  margin-right: 0
+}
+
+/* Project meta overlay */
+.projactmeta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 35px 0px 30px 30px;
+  background: linear-gradient(to bottom, transparent, #000 100%);
+  transition: .2s
+}
+
+/* Project title */
+.singleproject h3 {
+  font-family: Oswald, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-right: 15px
+}
+
+/* Project description */
+.singleproject p {
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: underline
+}
+
+/* Project link */
+.singleproject a {
+  position: absolute;
+  bottom: 40px;
+  left: 27px;
+  opacity: 0;
+  font-size: 15px;
+  font-weight: 500;
+  transform: translateX(-55px);
+  color: #fff;
+}
+
+/* Project hover effects */
+.singleproject:hover .projactmeta {
+  padding-bottom: 70px;
+  background: linear-gradient(to bottom, transparent, #000 180px)
+}
+.singleproject:hover.singleproject a {
+  visibility: visible;
+  opacity: 1;
+  transition: all ease .1s;
+  transition-delay: .3s;
+  transform: translateX(0)
+}
+
+/* News section header */
+.NEWSheader h1 {
+  font-size: 40px;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  color: #000;
+  margin-bottom: .5rem;
+  margin: 0 auto;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: .02em;
+  font-family: Oswald, sans-serif;
+  text-align: center
+}
+.NEWSheader p {
+  margin-bottom: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  color: #656565;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center
+}
+
+/* News grid container */
+.newsall {
+  width: 100%;
+  overflow: hidden
+}
+
+/* First news item margin */
+.singlenews:first-child {
+  margin-left: 0
+}
+
+/* Single news card */
+.singlenews {
+  width: 290px;
+  float: left;
+  overflow: hidden;
+  margin-left: 20px;
+  border: 1px solid #dadadadd
+}
+
+/* News image transition */
+.Newsimg img {
+  transition: .4s
+}
+
+/* News image container */
+.Newsimg {
+  width: 100%;
+  overflow: hidden
+}
+
+/* News image hover effect */
+.singlenews:hover img {
+  transform: scale(1.07)
+}
+
+/* News content box */
+.Newscontent {
+  padding: 25px
+}
+
+/* News content paragraph */
+.Newscontent p {
+  width: 230px;
+  font-family: 'Work Sans', sans-serif;
+  color: #656565;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 1rem
+}
+
+/* News content heading */
+.Newscontent h2 {
+  margin-top: 0;
+  font-family: Oswald, sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .2s
+}
+
+/* News heading hover */
+.Newscontent h2:hover {
+  color: #ff5200;
+  cursor: pointer
+}
+
+/* Entry content container */
+.Entrycontent {
+  overflow: hidden;
+  margin-bottom: 15px
+}
+
+/* Entry content paragraph */
+.Entrycontent p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: #727272;
+  margin: 0;
+  margin-bottom: 15px
+}
+
+/* Entry content links */
+.Entrycontent a:first-child {
+  cursor: auto;
+  color: #777
+}
+.Entrycontent a:last-child {
+  margin-left: 15px;
+  padding-left: 20px;
+  color: #000;
+  transition: .1S;
+  position: relative
+}
+.Entrycontent a:last-child:hover {
+  color: #ff5200
+}
+.Entrycontent a {
+  margin-top: 20px;
+  font-size: 14px
+}
+
+/* News button link */
+a.newsbtn {
+  color: #ff5200;
+  font-size: 15px;
+  font-weight: 500
+}
+
+/* Entry content link underline */
+.Entrycontent a:last-child:before {
+  content: "";
+  background: var(--main-color);
+  width: 15px;
+  height: 2px;
+  position: absolute;
+  left: -9px;
+  top: 8px
+}
+
+/* Footer styles */
+footer#footer {
+  background: #1a1a1a;
+  overflow: hidden
+}
+
+/* Small footer bar */
+.smallfooter {
+  border-top: 1px solid #272727;
+  overflow: hidden
+}
+
+/* Copyright text */
+.copywritetext {
+  width: 440px;
+  float: left;
+  padding: 25px 0
+}
+
+/* Copyright menu */
+.copywritemenu {
+  width: 295px;
+  float: right;
+  padding: 25px 0;
+  overflow: hidden
+}
+
+/* Bottom footer menu items */
+ul.bootomfootermenu li {
+  width: 73px;
+  float: left;
+  list-style: none
+}
+ul.bootomfootermenu a {
+  color: #ddd;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px
+}
+
+/* Footer box */
+.fbox {
+  width: 205px;
+  float: left;
+  padding-right: 30px;
+}
+
+/* Footer box wrapper */
+.fboxwrapper {
+  overflow: hidden;
+  padding-top: 180px;
+  padding-bottom: 80px
+}
+
+/* Last footer box */
+.fbox:last-child {
+  padding-right: 0;
+  width: 220px;
+}
+
+/* Footer box heading */
+.fbox h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  line-height: 31px;
+  color: #fafafa;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.02em;
+}
+
+/* Footer icon */
+.icon {
+  width: 25px;
+  position: absolute;
+  color: #ff5200
+}
+
+/* Footer details */
+.details {
+  padding-left: 30px;
+  padding-bottom: 6px;
+  color: #ababab;
+  font-size: 15px
+}
+
+/* Footer links */
+.links li {
+  padding: 5.5px 0px;
+  border-bottom: 1px dashed #4a4242;
+  color: #ababab;
+}
+.links li:last-child {
+  border: none;
+}
+.links a {
+  padding-left: 10px;
+  color: #ababab;
+  font-size: 15px;
+}
+.links i {
+  font-size: 13px;
+}
+
+/* Footer social icons */
+.fsocial i {
+  font-size: 16px;
+  padding: 20px 8px 0px 9px;
+  color: #ababab;
+  transition: .2s;
+}
+.fsocial i:hover {
+  cursor: pointer;
+  color: tomato;
+}
+
+/* Footer widget post */
+.widget-post {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+/* Footer date box */
+.fDate {
+  background-color: rgba(255, 255, 255, .1);
+  width: 50px;
+  float: left;
+  border-radius: 3px;
+  padding-bottom: 5px;
+  color: #fff !important;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.fDate strong {
+  display: block;
+  font-size: 24px;
+}
+
+/* Footer post month */
+.p-month {
+  display: block;
+  font-size: 9px !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Footer post year */
+.p-year {
+  display: block;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Footer post info */
+.bt-post-info {
+  margin-left: 70px;
+}
+
+/* Footer post title */
+.post-title {
+  font-family: 'Work Sans', sans-serif;
+  color: #ababab !important;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.05em;
+  padding-bottom: 6px;
+}
+.post-title a {
+  color: #ababab;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+}
+
+/* Footer post meta */
+.bt-post-meta ul li {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 0px;
+  color: #646464 !important;
+}
+
+/* Footer post icon */
+.post-l i {
+  margin: 0 5px;
+  color: #7b7b7b;
+}
+.post-l {
+  width: 75;
+  float: left;
+}
+
+/* Scroll to top button */
+.upBtn {
+  background: #bec6e2;
+  color: #cfe8e7;
+  text-align: center;
+  padding: 13px 19px;
+  border: none;
+  border-radius: 3px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: all 1s;
+}
+.upBtn:hover {
+  background: #7f92d6;
+  cursor: pointer;
+}
