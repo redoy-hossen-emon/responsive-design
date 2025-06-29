@@ -13,10 +13,11 @@ This is a fully responsive website built using **HTML**, **core CSS**, and **van
 
 ## 📸 Preview
 
-![Website Preview](preview.png) <!-- Replace with your screenshot filename -->
+![Website Preview]((https://redoyhossen.w3spaces.com/)) <!-- Replace with your screenshot filename -->
 
 ## 🛠️ Technologies Used
 
 - HTML5
 - CSS3 (Media Queries, Flexbox, Grid, Animations)
 - JavaScript (DOM Manipulation, Event Listeners)
+-used random online images (please don't relate to website) 
