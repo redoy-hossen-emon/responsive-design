@@ -1,0 +1,292 @@
+@media only screen and (max-width:800px) {
+
+  /* Social icons: increase font size */
+  .social a i {
+    font-size: 28px !important;
+    /* Increases font size by 5px */
+  }
+
+  /* Container width adjustment */
+  .container {
+    width: 94%
+  }
+
+  /* Phone element padding and margin */
+  #phem {
+    padding: 13.5px 3px 13.5px 0;
+    margin-right: 15px
+  }
+
+  /* Top bar main padding */
+  div#topbermain {
+    padding: 0 10px
+  }
+
+  /* Logo full width and float left */
+  .logo {
+    width: 100%;
+    float: left
+  }
+
+  /* Logo image width */
+  .logo img {
+    width: 145px
+  }
+
+  /* Search button margin */
+  div#searchbtn {
+    margin-top: 10px;
+  }
+
+  /* Hamburger bars icon styling */
+  #bars {
+    color: tomato;
+    font-size: 35px;
+    opacity: 1;
+    margin-left: 60px;
+  }
+
+  /* Main menu: hidden by default, absolute position */
+  ul.manuteam {
+    width: 100%;
+    float: none;
+    padding: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: absolute;
+    transition: all .3s;
+  }
+
+  /* Manu alignment reset */
+  .manu {
+    align-items: unset;
+  }
+
+  /* Main menu open state: visible, fixed position */
+  ul.manuteam2 {
+    transform: scaleY(1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  /* Main menu list items styling */
+  .manuteam li {
+    padding: 20px 30px;
+    float: none;
+    background: #00bfff;
+    border-bottom: 3px solid #ddd;
+    transition: .2s;
+    font-size: 22px;
+  }
+
+  /* Menu close bar styling */
+  .menuClose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white !important;
+    padding: 5px 10px !important;
+  }
+
+  /* Menu close logo image width */
+  .menuClose img {
+    width: 160px;
+  }
+
+  /* Menu close link padding */
+  .menuClose a {
+    padding-right: 70px;
+  }
+
+  /* Chevron down icon styling */
+  i.fas.fa-chevron-down {
+    margin-top: 5px;
+    float: right;
+    font-size: 13px
+  }
+
+  /* Submenu styling */
+  ul.subManu {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #ddd;
+  }
+
+  /* Submenu open state */
+  ul.subManu2 {
+    transform: scaleY(1) !important;
+  }
+
+  /* Submenu list items styling */
+  ul.subManu2 li {
+    margin-left: -10;
+    padding: 10px 40px;
+    width: 100%;
+    background: #3990ad
+  }
+
+  /* Remove border from last submenu item */
+  ul.subManu li :last-child {
+    border-bottom: 0
+  }
+
+  /* Submenu item hover effect */
+  .subManu li:hover {
+    padding-left: 80px;
+    font-size: 22px;
+  }
+
+  /* Hide submenu on hover for main menu page */
+  .manuteam #manuPage:hover .subManu {
+    transform: scaleY(0);
+    margin-top: 17px;
+  }
+
+  /* Search div height */
+  .srcDiv2 {
+    height: 145px;
+  }
+
+  /* Search div width and margin */
+  .srcDiv {
+    width: 97%;
+    margin-top: 15px;
+  }
+
+  /* Search icon font size */
+  .srcDiv i {
+    font-size: 48px;
+  }
+
+  /* Search input padding and font size */
+  .srcInput {
+    padding: 12px 16px;
+    font-size: 28px;
+  }
+
+  /* Single box full width and margin */
+  .siglebox {
+    width: 100%;
+    margin-bottom: 20px
+  }
+
+  /* Team image full width */
+  .teamimg {
+    width: 100%
+  }
+
+  /* Single icon full width and margin */
+  .singleicon {
+    width: 100%;
+    margin-bottom: 20px
+  }
+
+  /* Image content full width and margin */
+  .imagecontent {
+    width: 100%;
+    margin-bottom: 25px
+  }
+
+  /* Start section full width, margin, and padding */
+  .start {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 75px
+  }
+
+  /* Hide idea image */
+  .ideaimg {
+    height: 0px;
+  }
+
+  /* Idea right content full width */
+  .idearightcontent {
+    width: 100%
+  }
+
+  /* Team member full width and margin */
+  .teammember {
+    width: 100%;
+    margin-bottom: 25px
+  }
+
+  /* Remove left padding for team member */
+  .teammember {
+    padding-left: 0
+  }
+
+  /* Team icons size */
+  .teanicons a {
+    width: 35px;
+    height: 35px
+  }
+
+  /* Team icons container size */
+  .teanicons {
+    width: 190px;
+    height: 68px
+  }
+
+  /* Single project full width */
+  .singleproject {
+    width: 100%
+  }
+
+  /* Projects all: single column */
+  .projactsall {
+    width: 100%;
+    column-count: 1
+  }
+
+  /* Project hover effect */
+  .singleproject:hover .projactmeta {
+    padding-bottom: 80px
+  }
+
+  /* Single news full width and margin */
+  .singlenews {
+    width: 100%;
+    margin-bottom: 20px
+  }
+
+  /* Single news left margin reset */
+  .singlenews {
+    margin-left: 0px
+  }
+
+  /* News content paragraph full width */
+  .Newscontent p {
+    width: 100%;
+  }
+
+  /* Footer box full width and margin */
+  .fbox {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  /* Last footer box full width */
+  .fbox:last-child {
+    width: 100%;
+  }
+
+  /* Footer box wrapper padding */
+  .fboxwrapper {
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 0px;
+  }
+
+  /* Copyright menu styling */
+  .copywritemenu {
+    width: 295px;
+    float: none;
+    padding-top: 0px;
+    padding-bottom: 25px;
+    overflow: hidden;
+  }
+
+}
