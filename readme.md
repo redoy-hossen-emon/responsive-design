@@ -21,3 +21,7 @@ Website Preview( https://redoyhossen.w3spaces.com/ ) <!-- Replace with your scre
 - CSS3 (Media Queries, Flexbox, Grid, Animations)
 - JavaScript (DOM Manipulation, Event Listeners)
 -used random online images (please don't relate to website) 
+
+
+# Note
+It's not perfect. I think there have many gap to improve,
