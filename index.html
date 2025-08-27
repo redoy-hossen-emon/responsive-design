@@ -1,16 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Web design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/e3f0c0538c.js" crossorigin="anonymous" defer></script>
+  <!-- Stylesheets -->
+  <link href="Css.css" type="text/css" rel="stylesheet" />
+  <link href="responsive.css" type="text/css" rel="stylesheet" />
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Font Awesome Icons -->
-<script src="https://kit.fontawesome.com/e3f0c0538c.js" rossorigin="anonymous"></script>
-
-<!-- Stylesheets -->
-<link href="Css.css" type="text/css" rel="stylesheet" />
-<link href="responsive.css" type="text/css" rel="stylesheet" />
-
 <body>
   <!-- Header Section -->
   <header id="topbar">
@@ -18,126 +17,129 @@
       <div class="container">
         <div class="mosttop">
           <!-- Contact Info -->
-          <div class="phhone" id="phem"> <i id="icon" class="fas fa-phone"> </i> Phone: +(98) 888 7777</div>
-          <div class="email" id="phem"> <i id="icon" class="fas fa-envelope-square"> </i> Email:
-            sample-email@example.com</div>
+          <div class="phhone" id="phem"><i id="icon" class="fas fa-phone"></i> Phone: +(98) 888 7777</div>
+          <div class="email" id="phem"><i id="icon" class="fas fa-envelope-square"></i> Email: sample-email@example.com</div>
           <!-- Social Icons -->
           <div class="social">
-            <a href="#"> <i class="fab fa-facebook"> </i> </a>
-            <a href="#"> <i class="fab fa-twitter"> </i> </a>
-            <a href="#"> <i class="fab fa-linkedin"> </i> </a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
       </div>
     </div>
     <!-- Navigation Menu -->
-    <div class="primarymanu">
+    <nav class="primarymanu" aria-label="Main navigation">
       <div class="container">
         <div class="primarywrpper">
           <!-- Logo -->
-          <div class="logo"> <img class="customImg" src="image/logo.svg" /> </div>
+          <div class="logo"><img class="customImg" src="image/logo.webp" alt="Company Logo" /></div>
           <div class="manu">
-            <ul class="manuteam ">
+            <ul class="manuteam">
               <!-- Mobile Menu Close Button -->
-              <li class="menuClose">
-                <img class="customImg" src="image/logo.svg" />
-                <a>
-                  <span class="close first"></span> <span class="close"></span>
+              <li class="menuClose" id="menuClose">
+                <img class="customImg" src="image/logo.webp" alt="Company Logo Mini" />
+                <a href="#" aria-label="Close menu" id="closeMenuBtn">
+                  <span class="close first" id="closeFirst"></span> <span class="close" id="closeSecond"></span>
                 </a>
               </li>
               <!-- Main Menu Items -->
-              <li><a id="manuHOME" href="#"> HOME </a></li>
+              <li id="manuHOMEitem"><a id="manuHOME" href="#">HOME</a></li>
               <li id="manuPage">
-                <a href="#"> PAGES<i class="fas fa-chevron-down"></i> </a>
+                <a href="#" id="pagesMenuLink">PAGES <i class="fas fa-chevron-down"></i></a>
                 <!-- Submenu -->
-                <ul class="subManu">
-                  <li>Website</li>
-                  <li>Graphic</li>
-                  <li>Seowork</li>
-                  <li>developer</li>
-                  <li>beastcoder</li>
-                  <li>Worker</li>
-                  <li>Bicer</li>
+                <ul class="subManu" id="subManu">
+                  <li id="websiteSub"><a href="#">Website</a></li>
+                  <li id="graphicSub"><a href="#">Graphic</a></li>
+                  <li id="seoSub"><a href="#">Seowork</a></li>
+                  <li id="devSub"><a href="#">Developer</a></li>
+                  <li id="beastSub"><a href="#">Beastcoder</a></li>
+                  <li id="workerSub"><a href="#">Worker</a></li>
+                  <li id="bicerSub"><a href="#">Bicer</a></li>
                 </ul>
               </li>
-              <li><a href="#"> SARVESES</a></li>
-              <li><a href="#">PROJECTS </a></li>
-              <li><a href="#"> BLOG</a></li>
-              <li><a href="#"> CONTACT </a></li>
+              <li id="manuSERVICESitem"><a href="#">SARVESES</a></li>
+              <li id="manuPROJECTSitem"><a href="#">PROJECTS</a></li>
+              <li id="manuBLOGitem"><a href="#">BLOG</a></li>
+              <li id="manuCONTACTitem"><a href="#">CONTACT</a></li>
             </ul>
             <!-- Search and Menu Bars -->
             <div id="searchbtn">
-              <i class="fas fa-search"></i>
-              <i id="bars" class=" fas fa-bars"></i>
+              <button aria-label="Search" id="searchBtnIcon" style="background:none;border:none;"><i class="fas fa-search"></i></button>
+              <button aria-label="Menu" id="barsBtn" style="background:none;border:none;"><i id="bars" class="fas fa-bars"></i></button>
             </div>
           </div>
           <!-- Search Input -->
-          <div class="srcDiv"> <input type="text" placeholder="Search" class="srcInput" /> <i class="fas fa-search"></i>
+          <div class="srcDiv" id="srcDiv">
+            <label for="mainSearch" class="visually-hidden">Search</label>
+            <input type="text" id="mainSearch" placeholder="Search" class="srcInput" />
+            <button aria-label="Submit search" id="submitSearchBtn" style="background:none;border:none;"><i class="fas fa-search"></i></button>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
 
   <!-- Home Slider Section -->
-  <section class="homeslider back1">
+  <section class="homeslider back1" id="homeslider">
     <div class="container">
-      <div class="homecontent">
-        <h1>Best Quality Steel For Construction</h1>
-        <p> Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem.</p>
-        <div class="sliderbtn"> <button id="sliderworkbtn">WORK WITH US </button></div>
+      <div class="homecontent" id="homecontent">
+        <h1 id="sliderTitle">Best Quality Steel For Construction</h1>
+        <p id="sliderDesc">Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem.</p>
+        <div class="sliderbtn" id="sliderbtn">
+          <button id="sliderworkbtn">WORK WITH US</button>
+        </div>
       </div>
     </div>
     <!-- Slider Navigation -->
-    <div class="slidernav"> <span class="firstNav Nav2"> </span> <span class="secNav"> </span></div>
+    <div class="slidernav" id="slidernav"><span class="firstNav Nav2" id="firstNav"></span> <span class="secNav" id="secNav"></span></div>
   </section>
 
   <!-- Services Section -->
   <section id="services">
-    <div class="container">
-      <div class="sboxwrapper">
+    <div class="container" id="servicesContainer">
+      <div class="sboxwrapper" id="sboxwrapper">
         <!-- Single Service Box -->
-        <div class="siglebox scale1">
-          <div class="sboxicon"><i class="fab fa-accusoft"></i></div>
-          <div class="sboxtitle">
+        <div class="siglebox scale1" id="serviceBox1">
+          <div class="sboxicon" id="sboxicon1"><i class="fab fa-accusoft"></i></div>
+          <div class="sboxtitle" id="sboxtitle1">
             <a href="#">
-              <h2>Architecture & Engineering</h2>
+              <h2 id="sboxTitle1">Architecture & Engineering</h2>
             </a>
           </div>
-          <div class="sboxdesc"> Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</div>
-          <div class="sboxlink"><a class="larnmore" href="#">Learn more <i class="fas fa-arrow-right"></i> </a></div>
+          <div class="sboxdesc" id="sboxdesc1">Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</div>
+          <div class="sboxlink" id="sboxlink1"><a class="larnmore" href="#">Learn more <i class="fas fa-arrow-right"></i></a></div>
         </div>
         <!-- Repeat Service Boxes -->
         <div class="siglebox scale1" id="singlebox2">
-          <div id="home" class="sboxicon"><i class="fab fa-accusoft"></i></div>
-          <div class="sboxtitle">
+          <div class="sboxicon" id="sboxicon2"><i class="fab fa-accusoft"></i></div>
+          <div class="sboxtitle" id="sboxtitle2">
             <a href="#">
-              <h2 id="home">Architecture & Engineering</h2>
+              <h2 id="sboxTitle2">Architecture & Engineering</h2>
             </a>
           </div>
-          <div id="home" class="sboxdesc"> Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut
-          </div>
-          <div class="sboxlink"><a class="larnmore" href="#">Learn more<i class="fas fa-arrow-right"></i> </a></div>
+          <div class="sboxdesc" id="sboxdesc2">Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</div>
+          <div class="sboxlink" id="sboxlink2"><a class="larnmore" href="#">Learn more <i class="fas fa-arrow-right"></i></a></div>
         </div>
-        <div class="siglebox scale1">
-          <div class="sboxicon"><i class="fab fa-accusoft"></i></div>
-          <div class="sboxtitle">
+        <div class="siglebox scale1" id="serviceBox3">
+          <div class="sboxicon" id="sboxicon3"><i class="fab fa-accusoft"></i></div>
+          <div class="sboxtitle" id="sboxtitle3">
             <a href="#">
-              <h2>Architecture & Engineering</h2>
+              <h2 id="sboxTitle3">Architecture & Engineering</h2>
             </a>
           </div>
-          <div class="sboxdesc"> Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</div>
-          <div class="sboxlink"><a class="larnmore" href="#">Learn more<i class="fas fa-arrow-right"></i> </a></div>
+          <div class="sboxdesc" id="sboxdesc3">Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</div>
+          <div class="sboxlink" id="sboxlink3"><a class="larnmore" href="#">Learn more <i class="fas fa-arrow-right"></i></a></div>
         </div>
-        <div class="siglebox scale1">
-          <div class="sboxicon"><i class="fab fa-accusoft"></i></div>
-          <div class="sboxtitle">
+        <div class="siglebox scale1" id="serviceBox4">
+          <div class="sboxicon" id="sboxicon4"><i class="fab fa-accusoft"></i></div>
+          <div class="sboxtitle" id="sboxtitle4">
             <a href="#">
-              <h2>Architecture & Engineering</h2>
+              <h2 id="sboxTitle4">Architecture & Engineering</h2>
             </a>
           </div>
-          <div class="sboxdesc"> Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</div>
-          <div class="sboxlink"><a class="larnmore" href="#">Learn more<i class="fas fa-arrow-right"></i> </a></div>
+          <div class="sboxdesc" id="sboxdesc4">Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</div>
+          <div class="sboxlink" id="sboxlink4"><a class="larnmore" href="#">Learn more <i class="fas fa-arrow-right"></i></a></div>
         </div>
       </div>
     </div>
@@ -146,31 +148,34 @@
   <!-- Team Work Section -->
   <section>
     <div class="container">
-      <div class="maindiv">
+      <div class="maindiv" id="maindiv">
         <!-- Team Image -->
-        <div class="teamimg"> <img src="image/background_files/our-project.jpg" /></div>
+        <div class="teamimg" id="teamimg"> 
+          <picture>
+            <source srcset="image/background_files/our-project.webp" type="image/webp">
+            <img src="image/background_files/our-project.jpg" alt="Our Project Team" loading="lazy" />
+          </picture>
+        </div>
         <!-- Team Content -->
-        <div class="teamcontent">
-          <div class="mainconten">
+        <div class="teamcontent" id="teamcontent">
+          <div class="mainconten" id="mainconten">
             <h2>WORK WITH OUR TEAMS</h2>
-            <p> Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem. Donec
-              vehicula luctus nunc in laoreet. Aliquam erat volutpat. Suspendisse vulputate porttitor condimentum. Proin
-              viverra orci a leo suscipit placerat. Sed feugiat posuere semper. Cras vitae mi erat</p>
+            <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet. Aliquam erat volutpat. Suspendisse vulputate porttitor condimentum. Proin viverra orci a leo suscipit placerat. Sed feugiat posuere semper. Cras vitae mi erat</p>
           </div>
           <!-- Team Features List -->
-          <div class="teammanu">
-            <ul class="leftmanu">
-              <li> <i class="fas fa-chevron-right"></i>Building Quality</li>
-              <li> <i class="fas fa-chevron-right"></i>Honest Advisors</li>
-              <li> <i class="fas fa-chevron-right"></i>24/1week Supports</li>
+          <div class="teammanu" id="teammanu">
+            <ul class="leftmanu" id="leftmanu">
+              <li><i class="fas fa-chevron-right"></i>Building Quality</li>
+              <li><i class="fas fa-chevron-right"></i>Honest Advisors</li>
+              <li><i class="fas fa-chevron-right"></i>24/1week Supports</li>
             </ul>
-            <ul class="rightmanu">
-              <li> <i class="fas fa-chevron-right"></i>Performances Team</li>
-              <li> <i class="fas fa-chevron-right"></i> Work Solutions</li>
-              <li> <i class="fas fa-chevron-right"></i>Work & Deadline</li>
+            <ul class="rightmanu" id="rightmanu">
+              <li><i class="fas fa-chevron-right"></i>Performances Team</li>
+              <li><i class="fas fa-chevron-right"></i> Work Solutions</li>
+              <li><i class="fas fa-chevron-right"></i>Work & Deadline</li>
             </ul>
           </div>
-          <div class="teambtn"> <a href="#"> GET START</a></div>
+          <div class="teambtn" id="teambtn"><a href="#"> GET START</a></div>
         </div>
       </div>
     </div>
@@ -619,4 +624,5 @@
   <!-- Main JavaScript File -->
   <script src="program.js"></script>
 </body>
+
 </html>
